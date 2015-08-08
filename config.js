@@ -17,6 +17,15 @@ config = {
             port: process.env.PORT
         },
 
+        storage: {
+            active: 'ghost-cloudinary-store',
+            'ghost-cloudinary-store': {
+                cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+                api_key: process.env.CLOUDINARY_API_KEY,
+                api_secret: process.env.CLOUDINARY_API_SECRET
+            }
+        },
+
         paths:{
             contentPath: path.join(__dirname, '/content/')
         }
