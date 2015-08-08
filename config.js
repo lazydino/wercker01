@@ -3,7 +3,7 @@ var path = require('path'),
 
 config = {
     production: {
-        url: 'https://blog.ertrzyiks.pl/',
+        url: process.env.BASE_URL || 'http://blog.ertrzyiks.pl/',
 
         mail: {},
 
