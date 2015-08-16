@@ -23,4 +23,4 @@ deploy:
         code: |
           echo "Pushing to: $GIT_DEPLOY_USER@$GIT_DEPLOY_HOST:$GIT_DEPLOY_APP"
           git remote add dokku $GIT_DEPLOY_USER@$GIT_DEPLOY_HOST:$GIT_DEPLOY_APP
-          git push dokku master -f
+          git push dokku HEAD:master -f
