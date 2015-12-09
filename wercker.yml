@@ -15,8 +15,8 @@ deploy:
     - add-to-known_hosts:
         hostname: $GIT_DEPLOY_HOST
 
-    - add-ssh-key:
-        keyname: DIGITAL_OCEAN
+#    - add-ssh-key:
+#        keyname: DIGITAL_OCEAN
 
     - script:
         name: push to dokku
